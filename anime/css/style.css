@@ -1,0 +1,41 @@
+.Mybox{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+position: absolute;
+animation: move 2s ease-in-out none infinite alternate;
+
+}
+@keyframes move{
+    0%{
+        top:0;
+        left: 0;
+        background-color: aquamarine;
+        transform: rotate(0);
+    }
+   25%{
+        top:100px;
+        left: 100px;
+        background-color: black;
+        transform: rotate(360deg);
+    }
+    50%{
+        top:0;
+        left: 200px;
+        background-color: crimson;
+        transform: rotate(0);
+    }
+   75%{
+        top:100px;
+        left:300px;
+        background-color: black;
+        transform: rotate(360deg);
+    }
+    100%{
+        top:0;
+        left: 400px;
+        background-color: darkgreen;
+        transform: rotate(0);
+    }
+
+}

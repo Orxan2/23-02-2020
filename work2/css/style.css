@@ -1,0 +1,22 @@
+.box{
+    display: flex;
+    justify-content: center;
+
+}
+.box>span{
+    font-size: 50px;
+   
+   
+    margin: 20px; 
+    transition-duration: .7s;
+}
+.box>span:hover:nth-child(2n){
+    transform: rotate(45deg) scale(1.5) ;
+  color: blue;
+  transition-timing-function:  cubic-bezier(0, 1.13, 0.54, 1.53);
+}
+.box>span:hover:nth-child(2n+1){
+    transform: rotate(-45deg) scale(1.5) ;
+  color: brown;
+  transition-timing-function:  cubic-bezier(0, 1.13, 0.54, 1.53);
+}
